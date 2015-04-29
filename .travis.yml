@@ -1,0 +1,10 @@
+language: ruby
+os:
+  - osx
+rvm:
+  - 2.2.2
+gemfile:
+  - Gemfile
+script:
+  - bundle exec rake brew
+  - bundle exec rake spec
