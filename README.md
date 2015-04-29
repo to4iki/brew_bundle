@@ -29,7 +29,7 @@ $ bundle install --path vendor/bundle
 ### Execute
 
 ```bash
-$ bundle exec rake brew
+$ bundle exec rake brew:bundle
 ```
 
 ##### Dryrun

@@ -1,10 +1,13 @@
-language: ruby
+language: objective-c
 os:
   - osx
-rvm:
-  - 2.2.2
-gemfile:
-  - Gemfile
+before_install:
+  - brew install ruby
+  - brew install caskroom/cask/brew-cask
+  - brew update
+  - brew cask update
+  - gem install bundler
+  - bundle install --path vendor/bundle
+  - bundle exec rake brew:bundle
 script:
-  - bundle exec rake brew
   - bundle exec rake spec

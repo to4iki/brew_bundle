@@ -5,9 +5,6 @@ task :spec    => 'spec:all'
 task :default => :spec
 
 namespace :brew do
-
-  task :default => :bundle
-
   desc "Bundle brew.rb"
   task :bundle do
     sh "bundle exec itamae local recipes/brew.rb -y nodes/local.yml"
