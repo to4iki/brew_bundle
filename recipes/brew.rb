@@ -1,6 +1,5 @@
 # Const
 BREW_INSTALL_URL = "https://raw.githubusercontent.com/Homebrew/install/master/install".freeze
-BREW_CASK_OPTS = "--appdir=/Applications --caskroom=/usr/local/Caskroom".freeze
 
 # Update brew
 enable_update = node["brew"]["enable_update"] ? node["brew"]["enable_update"] : false
@@ -47,7 +46,7 @@ end
 # Install apps
 node["brew"]["install_apps"].each do |app|
   execute "Install apps" do
-    command "brew cask install #{app} #{BREW_CASK_OPTS}"
+    command "brew cask install #{app} --appdir=\"/Applications\" --caskroom=\"/usr/local/Caskroom\""
     not_if "brew cask list | grep -q #{app}"
   end
 end
