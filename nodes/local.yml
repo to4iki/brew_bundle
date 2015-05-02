@@ -2,21 +2,24 @@ brew:
   enable_update: false
   enable_upgrade: false
   add_repositories:
-    - motemen/ghq
   install_packages:
     - brew-cask
     - ag
     - carthage
+    - ghq
     - git
     - git-now
     - gibo
     - go
+    - heroku-toolbelt
     - hub
+    - lua
     - nodebrew
     - peco
     - python
     - rbenv
     - readline
+    - reattach-to-user-namespace
     - ruby-build
     - sbt
     - scala
@@ -32,7 +35,6 @@ brew:
     - bartender
     - atom
     - bettertouchtool
-    - clipmenu
     - dropbox
     - iterm2
     - karabiner
