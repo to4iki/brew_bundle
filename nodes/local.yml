@@ -9,14 +9,11 @@ brew:
     - ghq
     - git
     - git-now
-    - gibo
     - go
-    - heroku-toolbelt
     - hub
     - lua
     - nodebrew
     - peco
-    - python
     - rbenv
     - readline
     - reattach-to-user-namespace
@@ -25,7 +22,7 @@ brew:
     - scala
     - tig
     - tmux
-    - vim
+    - vim --with-lua
     - z
     - zsh
     - zsh-completions
